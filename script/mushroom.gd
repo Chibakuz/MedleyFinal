@@ -4,8 +4,8 @@ var is_moving_left = true
 var gravity = 10
 var speed = 100
 var turn_side
-var health = 100
-@onready var state_machine = $AnimationTrees.get("parameters/playback")
+var health = 75
+@onready var state_machine = $AnimationTree.get("parameters/playback")
 
 func _physics_process(delta):
 	velocity.x = -speed if is_moving_left else speed
@@ -31,22 +31,20 @@ func _on_detech_player_body_entered(body):
 		speed = 0
 		
 
+
 func _on_detech_player_body_exited(body):
 	if body.is_in_group('player'):
 		state_machine.travel("walk")
 		speed = 100
-	
+
 
 func _on_attack_player_body_entered(body):
 	if body.has_method('attacked'):
 		body.attacked(10)
-	
-	
-	
+		
 func _on_area_2d_area_entered(area):
 	is_moving_left = !is_moving_left
 	scale.x = -scale.x
-
-
+	
 func _on_timer_timeout():
 	$TextureProgressBar.visible = false

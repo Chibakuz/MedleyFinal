@@ -44,7 +44,7 @@ func _physics_process(delta):
 		
 	if health <= 0: 
 		death()
-		
+
 	move_and_slide()
 	
 func _on_attack_player_body_entered(body):
@@ -61,8 +61,12 @@ func attacked(damage):
 
 func death():
 	state_machine.travel("dead")
+	await get_tree().create_timer(2).timeout
+	get_tree().change_scene_to_file("res://Scene/state_1.tscn")
 	
-
+	
 func _on_timer_timeout():
 	$TextureProgressBar.visible = false
+	
+
 	

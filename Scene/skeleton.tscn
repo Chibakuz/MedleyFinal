@@ -320,7 +320,7 @@ transitions = ["Start", "walk", SubResource("AnimationNodeStateMachineTransition
 size = Vector2(41, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o4nb8"]
-size = Vector2(24.25, 52)
+size = Vector2(41.125, 55)
 
 [node name="Skeleton" type="CharacterBody2D"]
 position = Vector2(1, 0)
@@ -358,7 +358,7 @@ debug_color = Color(0.498039, 0.439216, 0.976471, 0.419608)
 [node name="attack_player" type="Area2D" parent="."]
 
 [node name="attack_player" type="CollisionShape2D" parent="attack_player"]
-position = Vector2(-49, -3)
+position = Vector2(-40.5625, -1.5)
 shape = SubResource("RectangleShape2D_o4nb8")
 disabled = true
 

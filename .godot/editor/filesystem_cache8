@@ -1,5 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1696585201
+::res://::1696622183
+README.md::TextFile::-1::1696588458::0::1::::<><>::
 ::res://addons/::1696459124
 ::res://addons/AsepriteWizard/::1696458079
 plugin.cfg::TextFile::-1::1696458079::0::1::::<><>::
@@ -174,18 +175,23 @@ gpl-palette-extension.md::TextFile::-1::1662107370::0::1::::<><>::
 LICENSES.md::TextFile::-1::1662107370::0::1::::<><>::
 ::res://Aseprite/extensions/::1696459122
 ::res://Aseprite/palettes/::1696459122
-::res://Scene/::1696585174
-flying_eye.tscn::PackedScene::8619890557381807940::1696585174::0::1::::<><>::res://script/Flying_eye.gd<>uid://c1jodrcw12vqi::::res://Tile/Monster/Mushroom/Run.png<>uid://gummf3t2ipc4::::res://Tile/Monster/Mushroom/Attack.png
-player.tscn::PackedScene::3855835005120203437::1696585174::0::1::::<><>::res://script/Player.gd<>uid://q35g8uvnjswf::::res://Tile/Character/Idle/Idle-Sheet.png<>uid://bammke3cy2y2a::::res://Tile/Character/Run/Run-Sheet.png<>uid://efjmxd7m3i7q::::res://Tile/Character/Attack-01/Attack-01-Sheet.png<>uid://c02j017c74oup::::res://Tile/Character/Dead/Dead-Sheet.png<>uid://doq7ebtir3wej::::res://Tile/Health/bg.png<>uid://palfvmoo27bt::::res://Tile/Health/green.png
-skeleton.tscn::PackedScene::4728075721675080243::1696585174::0::1::::<><>::res://script/skeleton.gd<>uid://cw3lu7tbh3atb::::res://Tile/Monster/Skeleton2/Skeleton Walk.png<>uid://tbophb20svrp::::res://Tile/Monster/Skeleton2/Skeleton Dead.png<>uid://cb5rgyun37e8w::::res://Tile/Monster/Skeleton2/Skeleton Attack.png<>uid://f6kg7rrynsrb::::res://Tile/Pixel Health Bar/Bar/empty health bar.png<>uid://ccnv0p7x77jn3::::res://Tile/Pixel Health Bar/Bar/health bar.png
-state_1.tscn::PackedScene::1206068552148682413::1696585174::0::1::::<><>::res://script/state_1.gd<>uid://g5covhqgtwn5::::res://Tile/Assets/Staet1/Tiles.png<>uid://bu62blkkyrknd::::res://Scene/player.tscn<>uid://d3gws2qo15shg::::res://Tile/Background/Background.png<>uid://b8mkymdvu8yud::::res://Scene/skeleton.tscn<>res://script/warp_to_state2.gd<>uid://dp8lw68wfewbs::::res://Tile/Assets/State2/Black Hole.png
-state_2.tscn::PackedScene::364000804728029626::1696585174::0::1::::<><>::uid://cbm5ldlbt4l4e::::res://Tile/Assets/State2/oak_woods_tileset.png<>uid://bu62blkkyrknd::::res://Scene/player.tscn
-Testattack.gd::GDScript::-1::1696583901::0::1::::<>RigidBody2D<>::
-::res://script/::1696584187
-Flying_eye.gd::GDScript::-1::1696584187::0::1::::<>CharacterBody2D<>::
-Player.gd::GDScript::-1::1696583901::0::1::::<>CharacterBody2D<>::
-skeleton.gd::GDScript::-1::1696583901::0::1::::<>CharacterBody2D<>::
-state_1.gd::GDScript::-1::1696583901::0::1::::<>Node2D<>::
+::res://Scene/::1696660676
+moving.tscn::PackedScene::202241250731928858::1696660676::0::1::::<><>::uid://cbm5ldlbt4l4e::::res://Tile/Assets/State2/oak_woods_tileset.png
+mushroom.tscn::PackedScene::8619890557381807940::1696661185::0::1::::<><>::res://script/Flying_eye.gd<>uid://c1jodrcw12vqi::::res://Tile/Monster/Mushroom/Run.png<>uid://gummf3t2ipc4::::res://Tile/Monster/Mushroom/Attack.png<>uid://b00rjv351duqv::::res://Tile/Monster/Mushroom/Death.png<>uid://f6kg7rrynsrb::::res://Tile/Pixel Health Bar/Bar/empty health bar.png<>uid://ccnv0p7x77jn3::::res://Tile/Pixel Health Bar/Bar/health bar.png
+player.tscn::PackedScene::3855835005120203437::1696660676::0::1::::<><>::res://script/Player.gd<>uid://q35g8uvnjswf::::res://Tile/Character/Idle/Idle-Sheet.png<>uid://bammke3cy2y2a::::res://Tile/Character/Run/Run-Sheet.png<>uid://efjmxd7m3i7q::::res://Tile/Character/Attack-01/Attack-01-Sheet.png<>uid://c02j017c74oup::::res://Tile/Character/Dead/Dead-Sheet.png<>uid://doq7ebtir3wej::::res://Tile/Health/bg.png<>uid://palfvmoo27bt::::res://Tile/Health/green.png
+trap.tscn::PackedScene::8592902928690440214::1696660676::0::1::::<><>::res://script/Trap.gd<>uid://bcyvk78h0xuq2::::res://Tile/Assets/Hive.png
+skeleton.tscn::PackedScene::4728075721675080243::1696660676::0::1::::<><>::res://script/skeleton.gd<>uid://cw3lu7tbh3atb::::res://Tile/Monster/Skeleton2/Skeleton Walk.png<>uid://tbophb20svrp::::res://Tile/Monster/Skeleton2/Skeleton Dead.png<>uid://cb5rgyun37e8w::::res://Tile/Monster/Skeleton2/Skeleton Attack.png<>uid://f6kg7rrynsrb::::res://Tile/Pixel Health Bar/Bar/empty health bar.png<>uid://ccnv0p7x77jn3::::res://Tile/Pixel Health Bar/Bar/health bar.png
+state_1.tscn::PackedScene::1206068552148682413::1696660675::0::1::::<><>::res://script/state_1.gd<>uid://g5covhqgtwn5::::res://Tile/Assets/Staet1/Tiles.png<>uid://bu62blkkyrknd::::res://Scene/player.tscn<>uid://d3gws2qo15shg::::res://Tile/Background/Background.png<>uid://b8mkymdvu8yud::::res://Scene/skeleton.tscn<>res://script/warp_to_state2.gd<>uid://dp8lw68wfewbs::::res://Tile/Assets/State2/Black Hole.png
+state_2.tscn::PackedScene::364000804728029626::1696660676::0::1::::<><>::res://script/state_2.gd<>uid://cbm5ldlbt4l4e::::res://Tile/Assets/State2/oak_woods_tileset.png<>uid://bu62blkkyrknd::::res://Scene/player.tscn<>uid://du2slq3u66l21::::res://Scene/mushroom.tscn<>uid://dr6agtcjsxuan::::res://Tile/Background/State2/background_layer_1.png<>uid://btjyt8o1qa4wa::::res://Tile/Background/State2/background_layer_2.png<>uid://di28fwv2q6ert::::res://Tile/Background/State2/background_layer_3.png<>uid://c475by55qqq1::::res://Scene/moving.tscn<>res://script/moving.gd<>res://script/moveing2.gd<>uid://duop4dkh7ahes::::res://Scene/trap.tscn
+::res://script/::1696660675
+Flying_eye.gd::GDScript::-1::1696661148::0::1::::<>CharacterBody2D<>::
+moving.gd::GDScript::-1::1696622215::0::1::::<>Node2D<>::
+Player.gd::GDScript::-1::1696625291::0::1::::<>CharacterBody2D<>::
+moveing2.gd::GDScript::-1::1696622657::0::1::::<>Node2D<>::
+Trap.gd::GDScript::-1::1696660675::0::1::::<>Node2D<>::
+skeleton.gd::GDScript::-1::1696616177::0::1::::<>CharacterBody2D<>::
+state_1.gd::GDScript::-1::1696619298::0::1::::<>Node2D<>::
+state_2.gd::GDScript::-1::1696660171::0::1::::<>Node2D<>::
 warp_to_state2.gd::GDScript::-1::1696583901::0::1::::<>Area2D<>::
 ::res://Tile/::1696578239
 ::res://Tile/Assets/::1696459126
@@ -239,8 +245,8 @@ Jump-All-Sheet.png::CompressedTexture2D::5077846369358929234::1657201236::169640
 Jump-End-Sheet.png::CompressedTexture2D::6147848161615543038::1657201370::1696401497::1::::<><>::
 ::res://Tile/Character/Jump-Start/::1696459126
 Jump-Start-Sheet.png::CompressedTexture2D::5768057495449074012::1657201316::1696401497::1::::<><>::
-::res://Tile/Character/Run/::1696459126
-Run-Sheet.png::CompressedTexture2D::2411939932066021902::1657189642::1696401497::1::::<><>::
+::res://Tile/Character/Run/::1696617479
+Run-Sheet.png::CompressedTexture2D::2411939932066021902::1657189642::1696617479::1::::<><>::
 ::res://Tile/Health/::1696578244
 bg.png::CompressedTexture2D::8176886075282820633::1651911544::1696578244::1::::<><>::
 blue.png::CompressedTexture2D::8681453146507598047::1651911659::1696578244::1::::<><>::
