@@ -1,7 +1,18 @@
+res://Scene/state_3.tscn
 res://Scene/state_1.tscn
 res://Scene/state_2.tscn
 res://Scene/player.tscn
 res://Scene/skeleton.tscn
 res://Scene/mushroom.tscn
+<<<<<<< HEAD
 res://Scene/moving.tscn
 res://Scene/trap.tscn
+=======
+res://Scene/undead.tscn
+res://script/Player.gd
+res://script/state_3.gd
+res://script/state_2.gd
+res://script/warp_to_boss.gd
+res://script/warp_to_state3.gd
+res://script/mushroom.gd
+>>>>>>> 582620eafba0bc2021103e35be69c11d449189eb

@@ -378,12 +378,12 @@ active = true
 [node name="attack_player" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="attack_player"]
-position = Vector2(14.5, -8.5)
+position = Vector2(23, -9)
 shape = SubResource("RectangleShape2D_7pbnj")
 disabled = true
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="attack_player"]
-position = Vector2(-31.5, -8.5)
+position = Vector2(-39, -9)
 shape = SubResource("RectangleShape2D_g2s80")
 disabled = true
 
