@@ -21,16 +21,13 @@ func attacked(damage):
 	$Timer.start()
 	if health <= 0:
 		state_machine.travel('dead')
-		$TextureProgressBar.visible = false
-		
-		
+		$TextureProgressBar.visible = false	
 
 func _on_detech_player_body_entered(body):
 	if body.is_in_group('player'):
 		state_machine.travel("attack")
 		speed = 0
 		
-
 
 func _on_detech_player_body_exited(body):
 	if body.is_in_group('player'):
@@ -40,7 +37,7 @@ func _on_detech_player_body_exited(body):
 
 func _on_attack_player_body_entered(body):
 	if body.has_method('attacked'):
-		body.attacked(10)
+		body.attacked(1)
 		
 func _on_area_2d_area_entered(area):
 	is_moving_left = !is_moving_left
