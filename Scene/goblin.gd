@@ -5,7 +5,6 @@ var gravity = 10
 var speed = 100
 var turn_side
 var health = 100
-@onready var removal_timer = $Timer2
 # Use the correct path to access the AnimationNodeStateMachine
 @onready var state_machine = $AnimationTree.get("parameters/playback")
 	
@@ -25,11 +24,6 @@ func attacked(damage):
 		state_machine.travel('dead')
 		$TextureProgressBar.visible = false
 		# Delay the removal of the enemy node
-		removal_timer.wait_time = 0.8  # Set the delay to 0.8 seconds
-		removal_timer.start()
-
-func _on_timer_2_timeout():
-	queue_free()  # Remove the enemy node
 		
 func _on_detech_player_body_entered(body):
 	if body.is_in_group('player'):
@@ -46,7 +40,7 @@ func _on_attack_player_body_entered(body):
 	if body.has_method('attacked'):
 		body.attacked(25)
 	
-func _on_area_2d_area_entered(area):
+func _on_area_2d_area_entered(_area):
 	is_moving_left = !is_moving_left
 	scale.x = -scale.x
 

@@ -1503,7 +1503,7 @@ texture = ExtResource("6_1fw8j")
 script = SubResource("GDScript_832d2")
 
 [node name="Skeleton" parent="enemy_place" instance=ExtResource("7_rjdop")]
-position = Vector2(797.5, 440)
+position = Vector2(1132.5, 407)
 
 [node name="Area2D" type="Area2D" parent="enemy_place"]
 

@@ -153,6 +153,7 @@ tracks/5/keys = {
 [sub_resource type="Animation" id="Animation_6fmj2"]
 resource_name = "dead"
 length = 1.4
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
