@@ -1320,6 +1320,20 @@ _data = {
 "move": SubResource("Animation_vajqw")
 }
 
+[sub_resource type="Animation" id="Animation_mfbmw"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("moving:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(239.5, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
 [sub_resource type="Animation" id="Animation_186c4"]
 resource_name = "move"
 length = 5.0
@@ -1334,20 +1348,6 @@ tracks/0/keys = {
 "handle_modes": PackedInt32Array(0, 0, 0),
 "points": PackedFloat32Array(378.5, -0.25, 0, 0.25, 0, 239.5, -0.25, 0, 0.25, 0, 378.5, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0, 2.4, 5)
-}
-
-[sub_resource type="Animation" id="Animation_mfbmw"]
-length = 0.001
-tracks/0/type = "bezier"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("moving:position:y")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(239.5, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_8rs4t"]

@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1696750794
+::res://::1696751444
 README.md::TextFile::-1::1696657053::0::1::::<><>::
 ::res://addons/::1696657053
 ::res://addons/AsepriteWizard/::1696657053
@@ -175,9 +175,9 @@ gpl-palette-extension.md::TextFile::-1::1696657053::0::1::::<><>::
 LICENSES.md::TextFile::-1::1696657053::0::1::::<><>::
 ::res://Scene/::1696750769
 bee.gd::GDScript::-1::1696750406::0::1::::<>CharacterBody2D<>::
-bee.tscn::PackedScene::7226277763405128351::1696750419::0::1::::<><>::uid://b86pdjcegjirj::::res://Tile/Monster/Small Bee/Fly/Fly-Sheet.png<>res://Scene/bee.gd<>uid://b3bf0ufdufo4b::::res://Tile/Monster/Small Bee/Attack/Attack-Sheet.png<>uid://f6kg7rrynsrb::::res://Tile/Pixel Health Bar/Bar/empty health bar.png<>uid://ccnv0p7x77jn3::::res://Tile/Pixel Health Bar/Bar/health bar.png<>uid://cjxbg2g3c636m::::res://Tile/Monster/Small Bee/Hit/Hit-Sheet.png
+bee.tscn::PackedScene::7226277763405128351::1696750419::0::1::::<><>::uid://b86pdjcegjirj
 goblin.gd::GDScript::-1::1696748119::0::1::::<>CharacterBody2D<>::
-goblin.tscn::PackedScene::7146106721922894635::1696750419::0::1::::<><>::uid://ch5hqi4frbbr8::::res://Tile/Monster/Goblin/Take Hit.png<>res://Scene/goblin.gd<>uid://bylex70iahjg5::::res://Tile/Monster/Goblin/Death.png<>uid://f6kg7rrynsrb::::res://Tile/Pixel Health Bar/Bar/empty health bar.png<>uid://dmmhhul8r5snk::::res://Tile/Monster/Goblin/Idle.png<>uid://cvtn8j1k0sf0f::::res://Tile/Monster/Goblin/Attack.png<>uid://ccnv0p7x77jn3::::res://Tile/Pixel Health Bar/Bar/health bar.png<>uid://m01gr700o1jf::::res://Tile/Monster/Goblin/Run.png
+goblin.tscn::PackedScene::7146106721922894635::1696750419::0::1::::<><>::uid://ch5hqi4frbbr8
 moving.tscn::PackedScene::202241250731928858::1696750769::0::1::::<><>::uid://cbm5ldlbt4l4e::::res://Tile/Assets/State2/oak_woods_tileset.png
 mushroom.tscn::PackedScene::8619890557381807940::1696750769::0::1::::<><>::res://script/mushroom.gd<>uid://c1jodrcw12vqi::::res://Tile/Monster/Mushroom/Run.png<>uid://gummf3t2ipc4::::res://Tile/Monster/Mushroom/Attack.png<>uid://b00rjv351duqv::::res://Tile/Monster/Mushroom/Death.png<>uid://f6kg7rrynsrb::::res://Tile/Pixel Health Bar/Bar/empty health bar.png<>uid://ccnv0p7x77jn3::::res://Tile/Pixel Health Bar/Bar/health bar.png
 player.tscn::PackedScene::3855835005120203437::1696750769::0::1::::<><>::res://script/Player.gd<>uid://q35g8uvnjswf::::res://Tile/Character/Idle/Idle-Sheet.png<>uid://bammke3cy2y2a::::res://Tile/Character/Run/Run-Sheet.png<>uid://efjmxd7m3i7q::::res://Tile/Character/Attack-01/Attack-01-Sheet.png<>uid://c02j017c74oup::::res://Tile/Character/Dead/Dead-Sheet.png<>uid://doq7ebtir3wej::::res://Tile/Health/bg.png<>uid://palfvmoo27bt::::res://Tile/Health/green.png
