@@ -1,9 +1,10 @@
-[gd_scene load_steps=16 format=3 uid="uid://rgh1jn5xmbvp"]
+[gd_scene load_steps=17 format=3 uid="uid://rgh1jn5xmbvp"]
 
 [ext_resource type="Script" path="res://script/state_1.gd" id="1_s65kk"]
 [ext_resource type="Texture2D" uid="uid://g5covhqgtwn5" path="res://Tile/Assets/Staet1/Tiles.png" id="2_vf64i"]
 [ext_resource type="PackedScene" uid="uid://bu62blkkyrknd" path="res://Scene/player.tscn" id="3_ovgm3"]
 [ext_resource type="Texture2D" uid="uid://d3gws2qo15shg" path="res://Tile/Background/Background.png" id="6_1fw8j"]
+[ext_resource type="PackedScene" uid="uid://da7p0ejkelr7d" path="res://Scene/bee.tscn" id="6_r5eah"]
 [ext_resource type="PackedScene" uid="uid://b8mkymdvu8yud" path="res://Scene/skeleton.tscn" id="7_rjdop"]
 [ext_resource type="Script" path="res://script/warp_to_state2.gd" id="9_whj57"]
 [ext_resource type="Texture2D" uid="uid://dp8lw68wfewbs" path="res://Tile/Assets/State2/Black Hole.png" id="10_17j5e"]
@@ -1460,10 +1461,10 @@ sources/0 = SubResource("TileSetAtlasSource_ejj5a")
 [sub_resource type="GDScript" id="GDScript_832d2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ungc7"]
-size = Vector2(18, 43)
+size = Vector2(24, 73)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fgqup"]
-size = Vector2(15.25, 43.125)
+size = Vector2(24.1245, 74.5002)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xk876"]
 size = Vector2(19, 54.75)
@@ -1510,19 +1511,22 @@ position = Vector2(1132.5, 407)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="enemy_place/Area2D"]
 light_mask = 7
 visibility_layer = 7
-position = Vector2(1009.5, 440)
+position = Vector2(1006.5, 425)
 shape = SubResource("RectangleShape2D_ungc7")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="enemy_place/Area2D"]
 light_mask = 7
 visibility_layer = 7
-position = Vector2(534.5, 438.5)
+position = Vector2(552.5, 425)
 shape = SubResource("RectangleShape2D_fgqup")
 
 [node name="enemy_place2" type="Node2D" parent="."]
 
 [node name="Skeleton" parent="enemy_place2" instance=ExtResource("7_rjdop")]
 position = Vector2(978, 246)
+
+[node name="Bee" parent="enemy_place2" instance=ExtResource("6_r5eah")]
+position = Vector2(712, 437)
 
 [node name="Area2D" type="Area2D" parent="enemy_place2"]
 
@@ -1548,5 +1552,6 @@ shape = SubResource("CircleShape2D_ydr5q")
 
 [connection signal="area_entered" from="enemy_place/Area2D" to="enemy_place/Skeleton" method="_on_area_2d_area_entered"]
 [connection signal="area_entered" from="enemy_place2/Area2D" to="enemy_place2/Skeleton" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="enemy_place2/Area2D" to="enemy_place2/Bee" method="_on_area_2d_area_entered"]
 [connection signal="area_entered" from="Warp" to="Warp" method="_on_area_entered"]
 [connection signal="body_entered" from="Warp" to="Warp" method="_on_body_entered"]

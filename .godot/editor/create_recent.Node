@@ -1,6 +1,6 @@
+AnimationTree
 Sprite2D
 AnimationPlayer
-AnimationTree
 CollisionShape2D
 CharacterBody2D
 Area2D

@@ -341,10 +341,10 @@ states/run/position = Vector2(422, 127)
 transitions = ["run", "attack", SubResource("AnimationNodeStateMachineTransition_uh8pf"), "dead", "End", SubResource("AnimationNodeStateMachineTransition_vu6rw"), "Start", "run", SubResource("AnimationNodeStateMachineTransition_3gikg"), "attack", "run", SubResource("AnimationNodeStateMachineTransition_ii6fh"), "attack", "dead", SubResource("AnimationNodeStateMachineTransition_wx57g"), "run", "dead", SubResource("AnimationNodeStateMachineTransition_vw3ld"), "dead", "attack", SubResource("AnimationNodeStateMachineTransition_3xx23"), "dead", "run", SubResource("AnimationNodeStateMachineTransition_m802h")]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4j22o"]
-size = Vector2(58, 39)
+size = Vector2(39.5, 18)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vtwqj"]
-size = Vector2(24.25, 41)
+size = Vector2(27.125, 41)
 
 [node name="Goblin" type="CharacterBody2D"]
 script = ExtResource("1_cp7qy")
@@ -373,14 +373,14 @@ parameters/conditions/dead = false
 [node name="detech_player" type="Area2D" parent="."]
 
 [node name="detech_player" type="CollisionShape2D" parent="detech_player"]
-position = Vector2(12, 9.5)
+position = Vector2(37, 9)
 shape = SubResource("RectangleShape2D_4j22o")
 debug_color = Color(0.498039, 0.439216, 0.976471, 0.419608)
 
 [node name="attack_player" type="Area2D" parent="."]
 
 [node name="attack_player" type="CollisionShape2D" parent="attack_player"]
-position = Vector2(29, 7.5)
+position = Vector2(30.4375, 7.5)
 shape = SubResource("RectangleShape2D_vtwqj")
 disabled = true
 

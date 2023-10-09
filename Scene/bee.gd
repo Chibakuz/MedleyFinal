@@ -8,15 +8,9 @@ var health = 100
 @onready var state_machine = $AnimationTree.get("parameters/playback")
 
 func _physics_process(delta):
-	var previous_velocity_x = velocity.x
-
-	if is_on_wall():
-		is_moving_left = !is_moving_left
-		velocity.x = -velocity.x  # Reverse the horizontal velocity
-	# Update velocity based on the current direction
 	velocity.x = -speed if is_moving_left else speed
 	velocity.y += gravity
-
+	
 	move_and_slide()
 	
 func attacked(damage):

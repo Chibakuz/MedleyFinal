@@ -5,14 +5,15 @@ var gravity = 10
 var speed = 100
 var turn_side
 var health = 100
-@onready var removal_timer = $Timer2
 # Use the correct path to access the AnimationNodeStateMachine
 @onready var state_machine = $AnimationTree.get("parameters/playback")
+func _ready():
+	state_machine.travel("walk")
 	
 func _physics_process(_delta):
 	velocity.x = speed if is_moving_left else -speed
 	velocity.y += gravity
-
+	
 	move_and_slide()
 
 func attacked(damage):
@@ -28,8 +29,8 @@ func attacked(damage):
 		
 func _on_detech_player_body_entered(body):
 	if body.is_in_group('player'):
-		state_machine.travel("attack")
-		speed = 0
+		state_machine.travel("fire")
+		state_machine.travel("walk")
 		
 
 func _on_detech_player_body_exited(body):
@@ -48,3 +49,5 @@ func _on_area_2d_area_entered(_area):
 
 func _on_timer_timeout():
 	$TextureProgressBar.visible = false
+
+

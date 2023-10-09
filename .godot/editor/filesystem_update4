@@ -1,9 +1,10 @@
 res://Scene/state_1.tscn
 res://Scene/dragon.gd
-res://Scene/goblin.tscn
 res://Scene/dragon.tscn
-res://Scene/goblin.gd
-res://Scene/demon.gd
+res://Scene/goblin.tscn
 res://Scene/demon.tscn
 res://Scene/skeleton.tscn
-res://script/state_1.gd
+res://Scene/demon.gd
+res://Scene/goblin.gd
+res://Scene/bee.gd
+res://Scene/bee.tscn

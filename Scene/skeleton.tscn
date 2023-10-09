@@ -334,6 +334,7 @@ texture = ExtResource("2_bke4s")
 centered = false
 flip_h = true
 hframes = 13
+frame = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -8)
