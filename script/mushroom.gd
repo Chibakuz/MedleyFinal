@@ -37,7 +37,7 @@ func _on_detech_player_body_exited(body):
 
 func _on_attack_player_body_entered(body):
 	if body.has_method('attacked'):
-		body.attacked(1)
+		body.attacked(5)
 		
 func _on_area_2d_area_entered(area):
 	is_moving_left = !is_moving_left

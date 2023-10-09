@@ -40,6 +40,8 @@ func _physics_process(delta):
 		state_machine.travel("idle")
 		
 	if Input.is_action_pressed("attack"):
+		get_node("AudioStreamPlayer2D").play()
+		$Timer.wait_time = 3
 		state_machine.travel("attack")
 		
 	if health <= 0: 
@@ -69,4 +71,6 @@ func _on_timer_timeout():
 	$TextureProgressBar.visible = false
 	
 
-	
+
+func _on_area_2d_body_entered(body):
+	pass # Replace with function body.

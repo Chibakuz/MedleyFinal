@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://bu62blkkyrknd"]
+[gd_scene load_steps=35 format=3 uid="uid://bu62blkkyrknd"]
 
 [ext_resource type="Script" path="res://script/Player.gd" id="1_0sar2"]
 [ext_resource type="Texture2D" uid="uid://q35g8uvnjswf" path="res://Tile/Character/Idle/Idle-Sheet.png" id="2_r5nht"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://c02j017c74oup" path="res://Tile/Character/Dead/Dead-Sheet.png" id="5_ug06e"]
 [ext_resource type="Texture2D" uid="uid://doq7ebtir3wej" path="res://Tile/Health/bg.png" id="6_odsfp"]
 [ext_resource type="Texture2D" uid="uid://palfvmoo27bt" path="res://Tile/Health/green.png" id="7_n03ul"]
+[ext_resource type="AudioStream" uid="uid://by65v8dlfibau" path="res://Sound/sword.mp3" id="8_b2fn0"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pyn63"]
 radius = 11.0
@@ -399,6 +400,9 @@ texture_under = ExtResource("6_odsfp")
 texture_progress = ExtResource("7_n03ul")
 
 [node name="Timer" type="Timer" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_b2fn0")
 
 [connection signal="body_entered" from="attack_player" to="." method="_on_attack_player_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

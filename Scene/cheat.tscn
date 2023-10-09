@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbj1cqqff0ukp"]
+
+[ext_resource type="Script" path="res://script/cheat.gd" id="1_ealsp"]
+[ext_resource type="Texture2D" uid="uid://cyg6txl4x11xc" path="res://Tile/Assets/Boss/Tile_16.png" id="2_nn7et"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2nxok"]
+size = Vector2(112, 90)
+
+[node name="cheat" type="CharacterBody2D"]
+script = ExtResource("1_ealsp")
+
+[node name="Tile16" type="Sprite2D" parent="."]
+position = Vector2(1.00002, -59)
+scale = Vector2(0.796875, 0.796875)
+texture = ExtResource("2_nn7et")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(3, -2)
+shape = SubResource("RectangleShape2D_2nxok")

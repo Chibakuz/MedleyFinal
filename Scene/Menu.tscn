@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://7mnc0snw8j6k"]
+
+[ext_resource type="Script" path="res://script/Menu.gd" id="1_sq8gm"]
+[ext_resource type="Texture2D" uid="uid://c3ih3h8vvrus" path="res://BG Menu/battleback1.png" id="2_pnr8w"]
+
+[node name="Menu" type="Node2D"]
+position = Vector2(165, 955)
+script = ExtResource("1_sq8gm")
+
+[node name="Bg" type="Sprite2D" parent="."]
+position = Vector2(837.5, -337.25)
+scale = Vector2(1.80888, 1.99114)
+texture = ExtResource("2_pnr8w")
+metadata/_edit_lock_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 684.0
+offset_top = -308.0
+offset_right = 966.0
+offset_bottom = -233.0
+
+[node name="Stat" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Start"
+
+[node name="Quit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Quit
+"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 549.0
+offset_top = -605.0
+offset_right = 1131.0
+offset_bottom = -511.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="VBoxContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 60
+text = "Medley Of Avatar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/Stat" to="." method="_on_stat_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]

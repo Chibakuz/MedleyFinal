@@ -20,7 +20,7 @@ func attacked(damage):
 	$Timer.wait_time = 1
 	$Timer.start()
 	
-	if health <= 50:
+	if health <= 100:
 		state_machine.travel("attack2")
 	if health <= 0 :
 		state_machine.travel('dead')

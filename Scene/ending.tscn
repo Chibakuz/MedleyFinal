@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://caabuo764w2e2"]
+
+[ext_resource type="Texture2D" uid="uid://iswp3dvkxtx0" path="res://Tile/aaa.png" id="1_bqr7x"]
+[ext_resource type="Script" path="res://script/ending.gd" id="1_u7hs8"]
+[ext_resource type="Texture2D" uid="uid://dang58hurcgge" path="res://Tile/bg.png" id="2_4pm8i"]
+
+[node name="Ending" type="Node2D"]
+script = ExtResource("1_u7hs8")
+
+[node name="Aaa" type="Sprite2D" parent="."]
+position = Vector2(1013.5, 510.5)
+scale = Vector2(2.53125, 2.26)
+texture = ExtResource("1_bqr7x")
+
+[node name="Bg" type="Sprite2D" parent="."]
+position = Vector2(465, 729)
+scale = Vector2(1.72222, 1.62533)
+texture = ExtResource("2_4pm8i")
